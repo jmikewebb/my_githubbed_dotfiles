@@ -1,0 +1,4 @@
+lennart@linux:~$ ls -l .vim*
+lrwxrwxrwx 1 lennart lennart     0 2009-08-14 17:26 .vim -> .my_githubbed_dotfiles/vim
+-rw------- 1 lennart lennart 36558 2009-08-14 17:26 .viminfo
+lrwxrwxrwx 1 lennart lennart     0 2009-08-14 17:26 .vimrc -> .my_githubbed_dotfiles/vimrc
