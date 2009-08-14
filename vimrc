@@ -16,5 +16,5 @@
 "# Jump to the last opened line of this file
 :au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
-"# Colorscheme fitting for PHP, C/C++ and Rails. Oi!
+"# Colorscheme fitting for PHP, C/C++ and Ruby. Oi!
 :colorscheme Dark2
