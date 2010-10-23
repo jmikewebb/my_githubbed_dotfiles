@@ -1,0 +1,9 @@
+[user]
+	name = Lennart Koopmann
+	email = lennart@socketfeed.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[format]
+	pretty = oneline
