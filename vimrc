@@ -40,3 +40,21 @@ if has('statusline')
     set titlestring=%t%(\ [%R%M]%)
    endif
 endif
+
+"# Open Nerdtree function (In dir of opened file)
+function OpenNERDTree()
+  execute ":NERDTree %"
+endfunction
+
+"# Open NERDTree with <ESC>+t
+command -nargs=0 OpenNERDTree :call OpenNERDTree()
+nmap <ESC>t :OpenNERDTree<CR>
+
+"# Open NERDTree and jump back to edit window.
+autocmd VimEnter * OpenNERDTree
+autocmd VimEnter * wincmd p
+
+"# NERDTree config.
+let NERDTreeShowBookmarks=1
+let NERDTreeChristmasTree=1
+let NERDTreeWinSize=45
