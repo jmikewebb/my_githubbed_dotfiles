@@ -57,4 +57,17 @@ autocmd VimEnter * wincmd p
 "# NERDTree config.
 let NERDTreeShowBookmarks=1
 let NERDTreeChristmasTree=1
-let NERDTreeWinSize=45
+let NERDTreeWinSize=40
+
+"# Toggle relative line numbering
+function ToggleRltvNmbr()
+  if(b:rltvnmbrmode == 1)
+    execute ":RltvNmbr!"
+  else
+    execute ":RltvNmbr"
+  endif
+endfunction
+
+"# Relative line numbering quick keys.
+command -nargs=0 ToggleRltvNmbr :call ToggleRltvNmbr()
+nmap <ESC>l :ToggleRltvNmbr<CR>
