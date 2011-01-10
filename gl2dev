@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# load RVM env
+source "~/.profile"
+
+# kill possibly existing mongod instances and start a new one.
+sudo killall mongod
+sudo mongod &
+
+# start server
+cd ~/workspace/graylog2-server/
+git pull origin master
+mvn assembly:assembly
+cd target
+sudo java -jar *-jar-with-dependencies.jar &
+
+# start rails with ruby 1.9.2
+cd ~/workspace/graylog2-web-interface/
+git pull origin master
+rake db:migrate
+rvm use 1.9.2
+rails server
