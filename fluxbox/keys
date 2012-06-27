@@ -1,5 +1,5 @@
 ### own ###
-Control t :ExecCommand xterm
+Control Alt t :ExecCommand xterm
 ##########
 
 # click on the desktop to get menus

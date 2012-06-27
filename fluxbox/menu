@@ -10,6 +10,9 @@
     [exec] (Chrome) {google-chrome} <>
     [exec] (Netbeans) {netbeans} <>
     [exec] (Spotify) {spotify} <>
+    [exec] (PulseAudio control) {pavucontrol} <>
+    [exec] (Thunderbird) {thunderbird} <>
+    [exec] (Pidgin) {pidgin} <>
   [end]
 
 # Automatically generated file. Do not edit (see /usr/share/doc/menu/html/index.html)

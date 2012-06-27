@@ -18,6 +18,19 @@ xmodmap "/home/lennart/.Xmodmap"
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
+### OWN ###
+# network manager applet
+nm-applet &
+
+# lol slits
+~./mach_bildschirm_sachen.sh
+
+wmweather -s EDDH &
+wmcpuload --backlight &
+wmbattery &
+wmwave &
+##########
+
 exec fluxbox
 # or if you want to keep a log:
 # exec fluxbox -log "/home/lennart/.fluxbox/log"
