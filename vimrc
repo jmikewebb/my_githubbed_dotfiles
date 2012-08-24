@@ -20,9 +20,10 @@ inoremap <NUL> <C-N>
 "# Jump to the last opened line of this file
 :au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
-"# Colorscheme fitting for PHP, C/C++ and Ruby. Oi!
-:set t_Co=256
-colorscheme molokai
+"# lol colors
+:set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 "# " Status line configuration gotten from: http://rgarciasuarez.free.fr/dotfiles/vimrc and http://github.com/tomasr/dotfiles/blob/master/.vimrc
 set ls=2 " Always show status line
