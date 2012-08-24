@@ -98,6 +98,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# git completion
+export PATH="$HOME/bin:$PATH"
+source ~/bin/git-completion.bash
+PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
+
 function parse_git_branch {  
  ref=$( git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/') || return  
  echo ${ref#refs/heads/}  
