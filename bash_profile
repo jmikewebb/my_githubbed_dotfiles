@@ -111,3 +111,8 @@ function parse_git_branch {
 export PS1='\[\033[01;32m\]\u\[\033[01;34m\] \w\[\033[31m\]$(parse_git_branch)\[\033[01;34m\]$\[\033[00m\] '
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+alias lol='say "crowd, oond reuben"' 
+
+export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/Users/lennart.koopmann/play/
