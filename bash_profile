@@ -100,7 +100,7 @@ fi
 
 # git completion
 export PATH="$HOME/bin:$PATH"
-source ~/bin/git-completion.bash
+source ~/.bin/git-completion.bash
 PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
 
 function parse_git_branch {  
