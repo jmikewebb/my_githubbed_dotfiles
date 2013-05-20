@@ -116,3 +116,7 @@ alias lol='say "crowd, oond reuben"'
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH=$PATH:/Users/lennart.koopmann/play/
+
+alias zomg='say "solvey? bah bah bah mack! mack!"'
+
+export JAVA_HOME=$(/usr/libexec/java_home)
