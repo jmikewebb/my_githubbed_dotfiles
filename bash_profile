@@ -100,7 +100,7 @@ fi
 
 # git completion
 export PATH="$HOME/bin:$PATH"
-source ~/bin/git-completion.bash
+source ~/.bin/git-completion.bash
 PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
 
 function parse_git_branch {  
@@ -116,3 +116,7 @@ alias lol='say "crowd, oond reuben"'
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH=$PATH:/Users/lennart.koopmann/play/
+
+alias zomg='say "solvey? bah bah bah mack! mack!"'
+
+export JAVA_HOME=$(/usr/libexec/java_home)
